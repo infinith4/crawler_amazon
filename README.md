@@ -4,6 +4,7 @@
 
 
 以下を参考にした：
+
 http://qiita.com/JunSuzukiJapan/items/eed49f67e2f3d562bfec
 
 get.rb, csv.rbはそのまま。
@@ -13,8 +14,11 @@ get.rb, csv.rbはそのまま。
 1. get html
 
 get.rbで
+
 this_year =2015
+
 login_form.fields_with(:name => 'email').first.value = "Amazon登録メールアドレス"
+
 login_form.fields_with(:name => 'password').first.value = "Amazonパスワード"
 
 を指定する。
