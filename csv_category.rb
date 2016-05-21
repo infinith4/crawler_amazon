@@ -128,7 +128,7 @@ CSV.open(csvfilename,'wb') do |csv|
     kindle = hash['ver']
     price = hash['price']
     type = hash['type']
-    if hash['type'] == 'books' || hash['type'] == 'digital-text' then
+    if hash['type'] == 'dvd' then
       csv << [date, order, title,title_url, author, price, kindle, type]
     end
   end
