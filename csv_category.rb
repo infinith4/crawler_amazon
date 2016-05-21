@@ -1,3 +1,4 @@
+# coding: utf-8
 require 'open-uri'
 require 'nokogiri'
 require 'csv'
@@ -128,7 +129,7 @@ CSV.open(csvfilename,'wb') do |csv|
     kindle = hash['ver']
     price = hash['price']
     type = hash['type']
-    if hash['type'] == 'dvd' then
+    if hash['type'] == 'books' || hash['type'] == 'digital-text' then
       csv << [date, order, title,title_url, author, price, kindle, type]
     end
   end
